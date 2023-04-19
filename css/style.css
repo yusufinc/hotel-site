@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: #003153;
+  color: #fffff0;
+  line-height: 1.6;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fffff0;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark);
+  opacity: 0.8;
+  color: #fffff0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 3rem;
+}
+
+.navbar a {
+  color: #fffff0;
+  padding: 1rem 2rem;
+  margin: 0 0.5rem;
+}
+.navbar a:hover {
+  border-bottom: 2px solid var(--warning);
+}
+.navbar ul {
+  display: flex;
+}
+
+.navbar .brand {
+  font-weight: 400;
+}
+
+.navbar h1 {
+  font-size: 3rem;
+}
+.navbar span {
+  color: var(--warning);
+}
+
+/* header */
+
+.main-header {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url(../images/bg-1.jpeg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fffff0;
+  /* position: relative; */
+}
+
+.main-header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.main-header .content h1 {
+  font-size: 5.5rem;
+}
+
+.main-header .content p {
+  font-size: 2.3rem;
+  max-width: 60rem;
+  margin: 2rem 0 3rem;
+}
+
+/* icons */
+.icons {
+  padding: 30px;
+}
+.icons h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  background-color: var(--primary);
+  color: #fffff0;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+/* about */
+.about {
+  color: #fffff0;
+}
+
+.about h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+.about p {
+  margin: 2rem 0;
+}
+
+/* gallery */
+.gallery img {
+  overflow: hidden;
+}
+.gallery img:hover {
+  overflow: hidden;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+/* card */
+.card {
+  color: #fffff0;
+  font-weight: 700;
+}
+
+.card .card-body {
+  padding: 2rem;
+  margin-top: -10px;
+}
+
+/* teams */
+
+.teams img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.teams img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+/* contact */
+.contact-form {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form .form-control {
+  margin: 1.5rem;
+}
+.contact-form input {
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  border: 1px solid #dad9d9;
+}
+
+.contact-form .btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.contact h2 {
+  font-size: 4rem;
+}
+
+/* footer */
+
+.footer {
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer a {
+  color: var(--danger);
+}
+.footer a:hover {
+  opacity: 0.7;
+}
+
+.footer .social a {
+  margin-right: 10px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px;
+    margin: 0 3px;
+  }
+
+  .teams img {
+    width: 70%;
+  }
+}
