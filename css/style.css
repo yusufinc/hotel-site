@@ -8,6 +8,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -93,7 +94,15 @@ img {
   color: #fffff0;
   /* position: relative; */
 }
-
+.main-header.blog {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url(../images/retrosupply-jLwVAUtLOAQ-unsplash.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fffff0;
+}
 .main-header .content {
   display: flex;
   flex-direction: column;
@@ -206,6 +215,15 @@ img {
   font-size: 4rem;
 }
 
+/* article */
+.articles {
+  padding: 3rem 5rem;
+}
+
+.article {
+  margin-top: 1.5rem;
+  color: #fffff0;
+}
 /* footer */
 
 .footer {
